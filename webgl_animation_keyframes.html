@@ -33,7 +33,7 @@
 
 		<script type="module">
 
-			import * as THREE from '../build/three.module.js';
+			import * as THREE from './build/three.module.js';
 
 			import Stats from './src/stats.module.js';
 
@@ -77,7 +77,7 @@
 
 			const loader = new GLTFLoader();
 			loader.setDRACOLoader( dracoLoader );
-			loader.load( 'assets/catani.glb', function ( gltf ) {
+			loader.load( './assets/catani.glb', function ( gltf ) {
 
 				const model = gltf.scene;
 				model.position.set( 1, 1, 0 );
